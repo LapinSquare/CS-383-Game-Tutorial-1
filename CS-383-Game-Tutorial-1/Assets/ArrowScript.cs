@@ -52,4 +52,9 @@ public class ArrowScript : MonoBehaviour
     {
         rb.MovePosition(rb.position + movement * arrowSpeed * Time.fixedDeltaTime);
     }
+
+    void OnBecameInvisible() //Gets off ALL cameras.
+    {
+        Destroy(gameObject);
+    }
 }
